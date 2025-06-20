@@ -8,7 +8,7 @@
     <title> Formulario de registro - Mi Web </title>
 </head>
 <body>
-    <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="10">
+    <table border="1" width="100%" height="100%" cellspacing="0" cellpadding="10" class="tablaMain">
     <tr>
         <td width="33.3%" valign="mid">            
             <table border="1" width="100%" cellspacing="0" cellpadding="10">
@@ -26,34 +26,36 @@
             <table border="1" width="100%" cellspacing="0" cellpadding="10">
             <tr>
                 <td>
-                    <p>
-                        <b> Ingresa los siguientes datos para registrarte: </b> <br>
-                        <br> <b> Nombre: <input size="50" maxlength="50" placeholder="Ej: Juan Esteban"> </b> <br>
-                        <br> <b> Apellido: <input size="50" maxlength="50" placeholder="Ej: Ramírez González"> </b> <br>
-                        <br> <b> Sexo: 
-                            <input type="radio"> <img class="menImg" src="img/white_men.png" height="40">
-                            <input type="radio"> <img class="girlImg" src="img/white_girl.png" height="40"> </b> <br>
-                        <br> <b> Email: <label for="correo"> </label> <input size="50" type="email" id="correo" name="correo" placeholder="example@example.com"required> </b> <br>
-                    </p>
-                    <h5>
-                        <br> <input type="checkbox" class="check" checked> Deseo recibir información sobre novedades y ofertas. <br>
-                        <input type="checkbox" class="check" > Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos. <br>
-                        
-                    </h5>
-                    <p>
-                        <b> Población: 
-                            <select name="lenguajes" id="lang">
-                            <option value="Ninguna">Ninguna</option>
-                            <option value="Bucaramanga">Bucaramanga</option>
-                            <option value="Giron">Giron</option>
-                            <option value="Floridablanca">Floridablanca</option>
-                            <option value="Piedecuesta">Piedecuesta</option>
-                            </select> <br>
-                            <br> Descripción: <br>
-                            <input class="description" placeholder="Write your comments here...">
-                        </b> <br>
-                            <br> <input type="submit" value="Enviar" 
-                    </p>               
+                    <form>
+                        <p>
+                            <b> Ingresa los siguientes datos para registrarte: </b> <br>
+                            <br> <b> Nombre: <input size="50" maxlength="50" placeholder="Ej: Juan Esteban" required> </b> <br>
+                            <br> <b> Apellido: <input size="50" maxlength="50" placeholder="Ej: Ramírez González" required> </b> <br>
+                            <br> <b> Sexo: 
+                                <input type="radio" name="optionSex"> <img class="menImg" src="img/white_men.png" height="40">
+                                <input type="radio" name="optionSex"> <img class="girlImg" src="img/white_girl.png" height="40"> </b> <br>
+                            <br> <b> Email: <label for="correo"> </label> <input size="50" type="email" id="correo" name="correo" placeholder="example@example.com"required> </b> <br>
+                        </p>
+                        <h5>
+                            <br> <input type="checkbox" class="check" checked required> Deseo recibir información sobre novedades y ofertas.<br>
+                            <input type="checkbox" class="check" required> Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos. <br>
+                            
+                        </h5>
+                        <p>
+                            <b> Población: 
+                                <select name="lenguajes" id="lang" required>
+                                <option value="Ninguna">Ninguna</option>
+                                <option value="Bucaramanga">Bucaramanga</option>
+                                <option value="Giron">Giron</option>
+                                <option value="Floridablanca">Floridablanca</option>
+                                <option value="Piedecuesta">Piedecuesta</option>
+                                </select> <br>
+                                <br> Descripción: <br>
+                                <input class="description" placeholder="Write your comments here...">
+                            </b> <br>
+                                <br> <input type="submit" value="Enviar" 
+                        </p>        
+                    </form>       
                 </td>
             </tr>
             </table>
